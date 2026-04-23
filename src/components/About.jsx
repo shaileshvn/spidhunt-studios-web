@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import abstractImg from '../assets/abstract.png';
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <img 
-              src="/src/assets/abstract.png" 
+              src={abstractImg} 
               alt="Digital Technology Workspace" 
               style={{ width: '100%', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px var(--accent-glow)' }} 
             />

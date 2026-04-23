@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -54,7 +55,7 @@ const Navbar = () => {
   return (
     <nav style={navStyles}>
       <a href="#" style={{ display: 'flex', alignItems: 'center' }}>
-        <img src="/src/assets/logo.png" alt="Spidhunt Studios" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
+        <img src={logo} alt="Spidhunt Studios" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
       </a>
       
       <div className="desktop-menu" style={menuStyles}>

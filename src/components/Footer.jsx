@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer = () => {
         }}>
           <div>
             <div style={{ marginBottom: '1rem' }}>
-              <img src="/src/assets/logo.png" alt="Spidhunt Studios" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
+              <img src={logo} alt="Spidhunt Studios" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
             </div>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
               We don't just build apps and websites—we build experiences designed for growth.
